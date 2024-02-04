@@ -1,6 +1,5 @@
 import React from "react";
 import './App.css';
-<<<<<<< HEAD
 import Navbar from "./components/Navbar";
 import {
     BrowserRouter as Router,
@@ -25,15 +24,6 @@ function App() {
             </Routes>
         </Router>
     );
-=======
-import { SuggestMatchCard } from './components/SuggestMatchCard';
-function App() {
-  return (
-    <div>
-      
-    </div>
-  );
->>>>>>> ff81335e9 (Add FindMatch and SuggestMatchCard)
 }
  
 export default App;
