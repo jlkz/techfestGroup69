@@ -6,12 +6,16 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavMenu>
-                    <NavLink to="/ImageCaption" activeStyle>
+                    <NavLink to="/ImageCaption">
                         ImageCaption
                     </NavLink>
-                    <NavLink to="/AfterMatch" activeStyle>
+                    <NavLink to="/AfterMatch">
                         AfterMatch
                     </NavLink>
+                    <NavLink to="/chatbot">
+                        ChatBot
+                    </NavLink>
+
                 </NavMenu>
             </Nav>
         </>
