@@ -10,6 +10,8 @@ import {
 import Home from "./pages";
 import AfterMatch from "./pages/AfterMatch";
 import ImageCaption from "./pages/ImageCaption";
+import Chatbot from "./components/Chatbot"
+
  
 function App() {
     return (
@@ -19,6 +21,7 @@ function App() {
                 <Route exact path="/" element={<Home />} />
                 <Route path="/AfterMatch" element={<AfterMatch />} />
                 <Route path="/ImageCaption" element={<ImageCaption />} />
+                <Route path="/ChatBot" element={<Chatbot />}/>
             </Routes>
         </Router>
     );
