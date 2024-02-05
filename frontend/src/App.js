@@ -12,7 +12,6 @@ import ImageCaption from "./pages/ImageCaption";
 import FindMatch from "./pages/FindMatch";
 import Chatbot from "./components/Chatbot"
 
- 
 function App() {
     return (
         <Router>
