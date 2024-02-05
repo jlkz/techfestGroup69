@@ -60,6 +60,9 @@
 }
 
 /* margins and paddings */
+.m-auto{
+    margin: auto;
+}
 
 .m-1{
     margin: 10px;
@@ -83,4 +86,8 @@
 
 .mt-2{
     margin-top: 30px;
+}
+
+.mt-3{
+    margin-top: 40px;
 }
