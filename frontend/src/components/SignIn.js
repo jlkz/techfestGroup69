@@ -15,13 +15,13 @@ const SignIn = () => {
     };
 
     const navigateToMatch = () => {
-        navigate('/AfterMatch')
+        navigate('/profile')
     };
 
     return (
         <div className="welcome-back">
             <div className="welcome-back-container">
-                <div className="welcome-back-title">Welcome Back to MingleConnect!</div>
+                <div className="welcome-back-title">Welcome Back to MingleMakan!</div>
                 <Form
                     name="normal_login"
                     className="login-form"

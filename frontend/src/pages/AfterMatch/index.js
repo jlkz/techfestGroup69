@@ -57,7 +57,31 @@ export default function AfterMatch(props) {
     <>
       <div className="flex flex-col items-center">
         <h2 className="justify-center ">You guys matched!</h2>
-        {filteredData && filteredData.map((fd) => {
+        <MatchProfile
+          displayName="Fish"
+          interests={["Reading", "Traveling", "Photography"]}
+          values={["Equality", "Creativity", "Adventure"]}
+          university="Nanyang Technological University"
+          age={25}
+          profilePicture="https://via.assets.so/img.jpg?w=200&h=200&tc=white&bg=#E78895&t=:)"
+          handleGenerateCaption={handleGenerateCaption}
+          handleOpenChatBot={handleOpenChatBot}
+        >
+        </MatchProfile>
+
+        <MatchProfile
+         displayName="Amanda"
+         interests={["Science", "Strategy Games", "Reading"]}
+         values={["Knowledge", "Independence", "Efficiency"]}
+         university="SIM University"
+         age={27}
+         profilePicture="https://via.assets.so/img.jpg?w=200&h=200&tc=white&bg=#E78895&t=:)"
+         handleGenerateCaption={handleGenerateCaption}
+         handleOpenChatBot={handleOpenChatBot}
+        >
+
+        </MatchProfile>
+        {/* {filteredData && filteredData.map((fd) => {
           return <MatchProfile
             displayName={fd.displayName}
             interests={fd.interests}
@@ -68,7 +92,7 @@ export default function AfterMatch(props) {
             handleGenerateCaption={handleGenerateCaption}
             handleOpenChatBot={handleOpenChatBot}
           ></MatchProfile>
-        })}
+        })} */}
       </div>
     </>
   );

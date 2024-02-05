@@ -20,7 +20,7 @@ function App() {
         <Router>
             <Navbar />
             <Routes>
-                <Route exact path="/" element={<SignUpPage />} />
+                <Route exact path="/" element={<SignInPage />} />
                 <Route path="/FindMatch" element={<FindMatch />} />
                 <Route path="/AfterMatch" element={<AfterMatch />} />
                 <Route path="/FoodDiscount" element={<FoodDiscount />} />
