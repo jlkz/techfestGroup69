@@ -6,6 +6,12 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavMenu>
+                    <NavLink to="/SignIn">
+                        Sign In
+                    </NavLink>
+                    <NavLink to="/SignUp">
+                        Sign Up
+                    </NavLink>
                     <NavLink to="/ImageCaption">
                         ImageCaption
                     </NavLink>
