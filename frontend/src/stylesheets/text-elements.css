@@ -47,3 +47,9 @@ i{
     font-size: 20px;
     cursor: pointer;
 }
+
+p{
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 18px;
+}

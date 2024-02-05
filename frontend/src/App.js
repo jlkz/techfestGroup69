@@ -9,7 +9,8 @@ import {
 import Home from "./pages";
 import AfterMatch from "./pages/AfterMatch";
 import ImageCaption from "./pages/ImageCaption";
-import Chatbot from "./components/Chatbot"
+import Chatbot from "./components/Chatbot";
+import Profile from "./pages/Profile";
 
  
 function App() {
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/AfterMatch" element={<AfterMatch />} />
                 <Route path="/ImageCaption" element={<ImageCaption />} />
                 <Route path="/ChatBot" element={<Chatbot />}/>
+                <Route path="/Profile" element={<Profile />}/>
             </Routes>
         </Router>
     );

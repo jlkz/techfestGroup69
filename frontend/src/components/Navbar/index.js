@@ -15,7 +15,9 @@ const Navbar = () => {
                     <NavLink to="/chatbot">
                         ChatBot
                     </NavLink>
-
+                    <NavLink to="/profile">
+                        Profile
+                    </NavLink>
                 </NavMenu>
             </Nav>
         </>
