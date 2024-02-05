@@ -59,6 +59,9 @@ export default function Home() {
     >
       {
         showComponent && <ProChat
+          helloMessage={
+            'Welcome to MingleConnect AI Chatbot! Please type "1" to start a conversation or "2" to get activity suggestions.'
+          }
           style={{
             height: '90vh',
             width: '100vw',
