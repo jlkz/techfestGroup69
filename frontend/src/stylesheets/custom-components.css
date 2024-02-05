@@ -27,8 +27,21 @@
     border: 1px solid #888888;
 }
 
+.green-button{
+    background-color: #A0C49D;
+}
+.green-button:hover{
+    background-color: #36AE7C !important;
+    color: black !important; 
+}
 
-
+.red-button{
+    background-color: #FF6868;
+}
+.red-button:hover{
+    background-color: #EB5353 !important; 
+    color: black !important; 
+}
 @keyframes loader-anim{
     0% {
         transform: rotate(0deg);

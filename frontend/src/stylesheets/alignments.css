@@ -60,6 +60,9 @@
 }
 
 /* margins and paddings */
+.m-auto{
+    margin: auto;
+}
 
 .m-1{
     margin: 10px;

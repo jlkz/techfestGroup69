@@ -1,33 +1,34 @@
 import React, { useState, useEffect } from "react";
-import { SuggestMatchCard } from "../components/SuggestMatchCard";
+import SuggestMatchCard from "../components/SuggestMatchCard";
+import { Card } from "antd";
 
-export function FindMatch(props) {
+export default function FindMatch(props) {
   const [users, setUsersData] = useState([]);
-  const [currentUser, setCurrentUser] = userState([]);
+  const [currentUser, setCurrentUser] = useState([]);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
     const [continueShowing, setContinueShowing] = useState(true); 
 
-  const handleLike = () => {
+  const handleMatch = () => {
     // Handle like action
-    const id =  users.filter((user)=>{
-        return user.id;
-    })
-    console.log(`Liked card with id ${users[currentCardIndex].id}`);
+    const id = currentUser.id; 
+    console.log(`Wanted to match with user id ${id}`);
     showNextCard();
   };
 
   const handlePass = () => {
     // Handle pass action
-    console.log(`Passed card with id ${users[currentCardIndex].id}`);
+    const id = currentUser.id; 
+    console.log(`Passed suggested user id ${id}`);
     showNextCard();
   };
 
   const showNextCard = () => {
     // if no more cards to show then show "no more suggested matches in your proximity"
-    if ((prevIndex + 1) % users.length) {
+    if ((currentCardIndex + 1) > users.length) {
         setContinueShowing(false);
     } else {
-        setCurrentCardIndex((prevIndex) => (prevIndex + 1) % cardData.length);
+        setCurrentCardIndex((currentCardIndex) => (currentCardIndex + 1));
+        setCurrentUser(users[currentCardIndex]);
     }
 
   };
@@ -36,10 +37,9 @@ export function FindMatch(props) {
     const fetchData = async () => {
       try {
         const response = await fetch("users.json");
-        console.log(response);
         const data = await response.json();
-        setUserData(data);
-        setCurrentUser(users[0]); 
+        setUsersData(data.users);
+        setCurrentUser(data.users[0]); 
 
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -49,8 +49,23 @@ export function FindMatch(props) {
     fetchData();
   }, []);
 
-  return <div>
-  <SuggestMatchCard currentUser={currentUser}>
-    </SuggestMatchCard>
-    </div>;
+  if (!currentUser){
+    console.log("currentUser not loaded");
+    return(<div>Loading Suggested Profiles...</div>)
+  }
+  return (continueShowing?
+    <div>
+    <SuggestMatchCard username={currentUser.username} title={currentUser.displayName} 
+    profilePicture={currentUser.profilePicture}
+    currentUserInterests={currentUser.interests}
+    currentUserValues={currentUser.values}
+    university={currentUser.university}
+    age={currentUser.age}
+    handleMatch={handleMatch}
+    handlePass={handlePass}>
+      </SuggestMatchCard>
+    </div>:
+
+    <Card><p>No more matches to show</p></Card>
+  );
 }
