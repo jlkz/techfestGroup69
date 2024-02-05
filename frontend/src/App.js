@@ -9,8 +9,9 @@ import {
 import Home from "./pages";
 import AfterMatch from "./pages/AfterMatch";
 import ImageCaption from "./pages/ImageCaption";
-import Chatbot from "./components/Chatbot"
-
+import Chatbot from "./components/Chatbot";
+import SignInPage from "./components/SignIn";
+import SignUpPage from "./components/SignUp"
  
 function App() {
     return (
@@ -20,7 +21,9 @@ function App() {
                 <Route exact path="/" element={<Home />} />
                 <Route path="/AfterMatch" element={<AfterMatch />} />
                 <Route path="/ImageCaption" element={<ImageCaption />} />
-                <Route path="/ChatBot" element={<Chatbot />}/>
+                <Route path="/ChatBot" element={<Chatbot />}/> 
+                <Route path="/SignIn" element={<SignInPage />} />  
+                <Route path="/SignUp" element={<SignUpPage />} />       
             </Routes>
         </Router>
     );
