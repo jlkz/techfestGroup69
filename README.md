@@ -1,14 +1,19 @@
 # MingleMakan
 
+## Include excerpt here
 How to run the project:
 ### Backend
-`cd backend`
-`npm install`
-`npx json-server --watch users.json --port 8000`
+1. `cd backend`
+
+2. `npm install`
+
+3. `npx json-server --watch users.json --port 8000`
 
 ### Frontend
-`cd ../frontend`
-`npm install`
-`npm start`
+1. `cd ../frontend`
 
+2. `npm install`
 
+3. `npm start`
+
+**Subsequently, only steps 1 and 3 have to be run!!**
