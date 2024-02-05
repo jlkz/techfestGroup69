@@ -42,6 +42,11 @@
     background-color: #EB5353 !important; 
     color: black !important; 
 }
+
+.modal-button{
+    background-color: #FBEEAC;
+}
+
 @keyframes loader-anim{
     0% {
         transform: rotate(0deg);
