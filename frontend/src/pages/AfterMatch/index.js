@@ -24,6 +24,7 @@ export default function AfterMatch(props) {
         console.log("successfulMatchesData", matchesData.successfilMatchesWithUser);
         const response2 = await fetch("users.json");
         const data2 = await response2.json(); 
+        console.log(data2);
         setUsersData(data2.users); 
         console.log("AFTERMATCH: this is usersData", usersData);
 
@@ -53,6 +54,11 @@ export default function AfterMatch(props) {
     navigate('/ImageCaption');
   }
 
+  if (!usersData ){
+    return <div>
+      Still Loading Data...
+    </div>
+  }
   return (
     <>
       <div className="flex flex-col items-center">
@@ -61,7 +67,7 @@ export default function AfterMatch(props) {
           return <MatchProfile
             displayName={fd.displayName}
             interests={fd.interests}
-            values={fd.values}
+            values={ fd.values}
             university={fd.university}
             age={19}
             profilePicture={fd.profilePicture}

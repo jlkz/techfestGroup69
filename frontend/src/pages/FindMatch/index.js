@@ -20,9 +20,9 @@ export default function FindMatch(props) {
     if (matchesData && matchesData.wantToMatchWithUser.includes(id)){
       console.log(`user ${id} wants to match too`); 
       setShowMatchedModal(true); 
-    } else {
+    } 
       showNextCard();
-    }
+ 
   };
 
   const handlePass = () => {

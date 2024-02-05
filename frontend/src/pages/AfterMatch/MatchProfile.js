@@ -44,6 +44,8 @@ export default function MatchProfile({
                 <Button onClick={handleGenerateCaption}>
                     Make your photo captions fun!
                 </Button>
+                <Button>Chat</Button>
+                <Button>Explore Food Vouchers</Button>
             </Space>
     </div>
   )

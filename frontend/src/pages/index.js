@@ -1,9 +1,15 @@
 import React from "react";
- 
+import {Button} from "antd";
+
+
 const Home = () => {
     return (
-        <div>
-            <h1>Welcome to group 69</h1>
+        <div className="">
+            <div><h1>Welcome to MingleMakan</h1></div>
+            <Button>
+                Find Match
+            </Button>
+
         </div>
     );
 };
