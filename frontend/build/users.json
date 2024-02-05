@@ -1,0 +1,87 @@
+{"users": [
+    {
+      "id": 1,
+      "username": "fish123",
+      "displayName": "Fish",
+      "personalityType": "ENFP",
+      "interests": ["Reading", "Traveling", "Photography"],
+      "values": ["Equality", "Creativity", "Adventure"],
+      "profilePicture": "https://placehold.co/400",
+      "age": 25,
+      "university": "Nanyang Technological University",
+      "major": "Computer Science",
+      "location": {
+        "city": "City1",
+        "state": "State1",
+        "country": "Country1"
+      }
+    },
+    {
+      "id": 2,
+      "username": "nicole123",
+      "displayName": "Nicole",
+      "personalityType": "ISTJ",
+      "interests": ["Hiking", "Cooking", "Technology"],
+      "values": ["Order", "Reliability", "Efficiency"],
+      "age": 28,
+      "university": "Nanyang Technological University",
+      "major": "Business Administration",
+      "location": {
+        "city": "City2",
+        "state": "State2",
+        "country": "Country2"
+      }
+    },
+    {
+      "id": 3,
+      "username": "lilian123",
+      "displayName": "Lilian",
+      "personalityType": "INFP",
+      "interests": ["Art", "Writing", "Nature"],
+      "values": ["Authenticity", "Empathy", "Personal Growth"],
+      "profilePicture": "https://placehold.co/400",
+      "age": 23,
+      "university": "National University of Singapore",
+      "major": "Psychology",
+      "location": {
+        "city": "City3",
+        "state": "State3",
+        "country": "Country3"
+      }
+    },
+    {
+      "id": 4,
+      "username": "josh123",
+      "personalityType": "ESTP",
+      "interests": ["Sports", "Music", "Adventures"],
+      "values": ["Action", "Freedom", "Excitement"],
+      "profilePicture": "https://placehold.co/400",
+      "age": 30,
+      "university": "GHI University",
+      "major": "Physical Education",
+      "location": {
+        "city": "City4",
+        "state": "State4",
+        "country": "Country4"
+      }
+    },
+    {
+      "id": 5,
+      "username": "amanda123",
+      "displayName": "Amanda", 
+      "personalityType": "INTJ",
+      "interests": ["Science", "Strategy Games", "Reading"],
+      "values": ["Knowledge", "Independence", "Efficiency"],
+      "profilePicture": "https://placehold.co/400",
+      "age": 27,
+      "university": "SIM University",
+      "major": "Physics",
+      "location": {
+        "city": "City5",
+        "state": "State5",
+        "country": "Country5"
+      }
+    }
+  ]
+}
+  
