@@ -13,7 +13,6 @@ import Profile from "./pages/Profile";
 import FoodDiscount from "./pages/FoodDiscount";
 import FindMatch from "./pages/FindMatch";
 import Chatbot from "./components/Chatbot"
-import Chatbot from "./components/Chatbot";
 import SignInPage from "./components/SignIn";
 import SignUpPage from "./components/SignUp"; 
 function App() {
