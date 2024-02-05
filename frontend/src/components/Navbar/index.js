@@ -15,7 +15,7 @@ import RestaurantIcon from '@mui/icons-material/Restaurant';
 import {useNavigate} from 'react-router-dom'; 
 
 
-const pages = ['ImageCaption', 'AfterMatch', 'Chatbot'];
+const pages = ['ImageCaption', 'AfterMatch', 'Chatbot', 'FindMatch', 'FoodDiscount'];
 const settings = ['Profile', 'Sign In', 'Logout'];
 
 
@@ -94,11 +94,17 @@ function ResponsiveAppBar() {
             >
               
 
+                <MenuItem key="ImageCaption" onClick = {() => navigate("/Findmatch")}>
+                  <Typography textAlign="center">Find Match</Typography>
+                </MenuItem>
                 <MenuItem key="ImageCaption" onClick = {() => navigate("/imagecaption")}>
                   <Typography textAlign="center">Image Caption</Typography>
                 </MenuItem>
                 <MenuItem key="AfterMatch" onClick = {() => navigate("/aftermatch")}>
                   <Typography textAlign="center">After Match</Typography>
+                </MenuItem>
+                <MenuItem key="ImageCaption" onClick = {() => navigate("/FoodDiscount")}>
+                  <Typography textAlign="center">Food Discount</Typography>
                 </MenuItem>
                 <MenuItem key="Chatbot" onClick = {() => navigate("/chatbot")}>
                   <Typography textAlign="center">Chatbot</Typography>
@@ -126,7 +132,13 @@ function ResponsiveAppBar() {
             MingleMakan
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            
+            <Button
+                key="FindMatch"
+                onClick={() => navigate("/FindMatch")}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                Find Match
+            </Button>
             <Button
                 key="ImageCaption"
                 onClick={() => navigate("/ImageCaption")}
@@ -141,6 +153,14 @@ function ResponsiveAppBar() {
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 After Match
+            </Button>
+
+            <Button
+                key="FoodDiscount"
+                onClick={() => navigate("/FoodDiscount")}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                Food Discount
             </Button>
 
             <Button
