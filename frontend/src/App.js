@@ -11,6 +11,7 @@ import AfterMatch from "./pages/AfterMatch";
 import ImageCaption from "./pages/ImageCaption";
 import Chatbot from "./components/Chatbot";
 import Profile from "./pages/Profile";
+import FoodDiscount from "./pages/FoodDiscount";
 
  
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route path="/AfterMatch" element={<AfterMatch />} />
+                <Route path="/FoodDiscount" element={<FoodDiscount />} />
                 <Route path="/ImageCaption" element={<ImageCaption />} />
                 <Route path="/ChatBot" element={<Chatbot />}/>
                 <Route path="/Profile" element={<Profile />}/>
