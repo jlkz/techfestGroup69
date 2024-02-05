@@ -11,7 +11,6 @@ import AfterMatch from "./pages/AfterMatch";
 import ImageCaption from "./pages/ImageCaption";
 import FindMatch from "./pages/FindMatch";
 import Chatbot from "./components/Chatbot"
-import Chatbot from "./components/Chatbot";
 import SignInPage from "./components/SignIn";
 import SignUpPage from "./components/SignUp"; 
 function App() {

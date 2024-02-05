@@ -30,8 +30,6 @@ export default function AfterMatch(props) {
 
         setFilteredData(usersData.filter(user => successfulMatchesData.includes(user.id)));
 
-
-        
       } catch (error) {
         console.error("AFTERMATCH: Error fetching data: ", error);
       }
