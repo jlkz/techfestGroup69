@@ -6,20 +6,7 @@ const SignIn = () => {
     const navigate = useNavigate();
 
     const onFinish = async (values) => {
-        try {
-            const response = await fetch('/api/signin', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(values),
-            });
-            if (response.ok) {
-                navigateToMatch();
-            }
-        } catch (error) {
-            console.log(error);
-        }
+        navigateToMatch();
     };
     
 
