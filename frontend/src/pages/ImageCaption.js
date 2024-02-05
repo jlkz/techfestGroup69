@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { InboxOutlined, SmileOutlined } from "@ant-design/icons";
+import { InboxOutlined } from "@ant-design/icons";
 import { message, Upload, Card, Col, Row } from 'antd';
 import OpenAI from 'openai';
 
