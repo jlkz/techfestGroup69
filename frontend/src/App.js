@@ -11,7 +11,9 @@ import AfterMatch from "./pages/AfterMatch";
 import ImageCaption from "./pages/ImageCaption";
 import FindMatch from "./pages/FindMatch";
 import Chatbot from "./components/Chatbot"
-
+import Chatbot from "./components/Chatbot";
+import SignInPage from "./components/SignIn";
+import SignUpPage from "./components/SignUp"; 
 function App() {
     return (
         <Router>
@@ -21,7 +23,9 @@ function App() {
                 <Route path="/FindMatch" element={<FindMatch />} />
                 <Route path="/AfterMatch" element={<AfterMatch />} />
                 <Route path="/ImageCaption" element={<ImageCaption />} />
-                <Route path="/ChatBot" element={<Chatbot />}/>
+                <Route path="/ChatBot" element={<Chatbot />}/> 
+                <Route path="/SignIn" element={<SignInPage />} />  
+                <Route path="/SignUp" element={<SignUpPage />} />       
             </Routes>
         </Router>
     );
