@@ -9,8 +9,8 @@ import {
 import Home from "./pages";
 import AfterMatch from "./pages/AfterMatch";
 import ImageCaption from "./pages/ImageCaption";
-import Profile from "./pages/Profile";
-import FoodDiscount from "./pages/FoodDiscount";
+import Profile from "./pages/Profile/Profile";
+import FoodDiscount from "./pages/FoodDiscount/FoodDiscount";
 import FindMatch from "./pages/FindMatch";
 import Chatbot from "./components/Chatbot"
 import SignInPage from "./components/SignIn";
