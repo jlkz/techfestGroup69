@@ -1,8 +1,8 @@
 {   
     "currentUserId": 6,
     "userMatches":{
-        "wantToMatchWithUser": [1, 5],
-        "successfulMatchesWithUser": [],
+        "wantToMatchWithUser": [1, 5, 7],
+        "successfulMatchesWithUser": [1, 5],
         "rejectedByUser": []
     }
 }
