@@ -23,6 +23,7 @@
       "personalityType": "ISTJ",
       "interests": ["Hiking", "Cooking", "Technology"],
       "values": ["Order", "Reliability", "Efficiency"],
+      "profilePicture": "https://placehold.co/400",
       "age": 28,
       "university": "Nanyang Technological University",
       "major": "Business Administration",
@@ -52,6 +53,7 @@
     {
       "id": 4,
       "username": "josh123",
+      "displayName": "Josh",
       "personalityType": "ESTP",
       "interests": ["Sports", "Music", "Adventures"],
       "values": ["Action", "Freedom", "Excitement"],
