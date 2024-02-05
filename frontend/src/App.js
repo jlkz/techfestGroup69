@@ -9,6 +9,8 @@ import {
 import Home from "./pages";
 import AfterMatch from "./pages/AfterMatch";
 import ImageCaption from "./pages/ImageCaption";
+import Profile from "./pages/Profile";
+import FoodDiscount from "./pages/FoodDiscount";
 import FindMatch from "./pages/FindMatch";
 import Chatbot from "./components/Chatbot"
 import Chatbot from "./components/Chatbot";
@@ -22,7 +24,9 @@ function App() {
                 <Route exact path="/" element={<Home />} />
                 <Route path="/FindMatch" element={<FindMatch />} />
                 <Route path="/AfterMatch" element={<AfterMatch />} />
+                <Route path="/FoodDiscount" element={<FoodDiscount />} />
                 <Route path="/ImageCaption" element={<ImageCaption />} />
+                <Route path="/Profile" element={<Profile />}/>
                 <Route path="/ChatBot" element={<Chatbot />}/> 
                 <Route path="/SignIn" element={<SignInPage />} />  
                 <Route path="/SignUp" element={<SignUpPage />} />       

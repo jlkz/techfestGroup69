@@ -18,10 +18,15 @@ const Navbar = () => {
                     <NavLink to="/AfterMatch">
                         AfterMatch
                     </NavLink>
+                    <NavLink to="/FoodDiscount">
+                        Food Discount
+                    </NavLink>
                     <NavLink to="/chatbot">
                         ChatBot
                     </NavLink>
-
+                    <NavLink to="/profile">
+                        Profile
+                    </NavLink>
                 </NavMenu>
             </Nav>
         </>
