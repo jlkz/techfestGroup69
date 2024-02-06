@@ -16,6 +16,8 @@ import Chatbot from "./components/Chatbot"
 import SignInPage from "./components/SignIn";
 import SignUpPage from "./components/SignUp"; 
 function App() {
+    console.log(process.env.OPEN_AI_API_KEY);
+
     return (
         <Router>
             <Navbar />

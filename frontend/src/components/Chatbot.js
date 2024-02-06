@@ -8,9 +8,10 @@ import OpenAI from 'openai';
 export default function Home() {
 
   const theme = useTheme();
-  const [showComponent, setShowComponent] = useState(false)
+  const [showComponent, setShowComponent] = useState(false);
+
   const openai = new OpenAI({
-    apiKey: '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',
+    apiKey: `${process.env.REACT_APP_OPEN_AI_API_KEY}`,
     dangerouslyAllowBrowser: true
   });
 

@@ -13,7 +13,7 @@ const ImageCaption = () => {
   const getFunnyCaption = async (imageDescription) => {
 
     const openai = new OpenAI({
-      apiKey: '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',
+      apiKey: `${process.env.REACT_APP_OPEN_AI_API_KEY}`,
       dangerouslyAllowBrowser: true
     });
 
